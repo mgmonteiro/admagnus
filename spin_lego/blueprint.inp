@@ -1,0 +1,52 @@
+0
+199 49 0
+293
+0.0
+1
+2.0
+4
+15.0
+2
+2 4
+1.0 1.0 1.0
+
+Each line corresponds to the following:
+
+[1] Shape of the nanomagnet:
+
+	0 - Box
+	1 - Sphere
+	2 - Cylinder
+	3 - Pac_Man
+	4 - Tubular/Ring
+	5 - Tower of Hanoi
+
+[2] Total adimensional size of simulation box, INTEGER number of field sites (geometries will be cut inside of this box)
+
+[3] Seed for random number generator
+
+[4] Mouth angle for structure (3) in degrees (0,360)
+
+[5] Type of structure (3) - 1 for flat Pac-Man with thickness Lz and 2 for
+3D Pac-Man (only 1 in this version)
+
+[6] Radius of radially vacant sector in structure (4) (adimensional real
+fraction of field sites)
+
+[7] Type of Magnetization vector field
+
+	0 - Random
+	1 - Planar Vortex (- sin t, cos t, 0)
+	2 - Skyrmion on cylinder wall rotating the Y-axis
+	3 - Skyrmion on thin film on XY plane
+	4 - Saturated field in (x,y,z)
+
+[8] Size of Skyrmion for Fields (2) and (3) (adimensional real fraction of
+field sites)
+
+[9] Radius of smaller piece of tower in structure (adimensional real
+fraction of field sites) (5)
+
+[10] Heights of each tower in structure (5) (integer number of layers)
+
+[11] Direction of saturation for field (4)
