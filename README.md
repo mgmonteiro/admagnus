@@ -4,6 +4,7 @@ Micromagnetics simulation for CUDA processors
 Version: Sample/Template
 
 Author: Maxwel Gama
+
 Contact: maxweljr@gmail.com
 
 # What this is
