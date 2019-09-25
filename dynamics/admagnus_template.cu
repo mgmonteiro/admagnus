@@ -562,7 +562,7 @@ Neighbor_Field(nviz, viz_, offset, mx_, my_, mz_, &Hexx[n], &Hexy[n], &Hexz[n], 
 
 //Tile calculation for dipolar interactions - uses the nearest integer blockround >= atoms that is a multiple of p; guaranteed sucessful access to shared memory.
 
-//Problema: como garantir acesso contínuo e correto a todos os endereços de memória sem alocar um buffer blockround > atoms divisível por p?
+
 		
 Demag_Field(blockround, x_, y_, z_, mx_, my_, mz_, r, m, &Hdipx[n], &Hdipy[n], &Hdipz[n], x, y, z);
 
