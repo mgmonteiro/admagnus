@@ -56,7 +56,7 @@ inline void gpuAssert(cudaError_t code, const char *file, int line, bool abort=t
 
 //GPU CONSTANTS
 
-static double gyro = (2.0/1.05)*9.27e+10; // Gyromagnetic ratio in [rad/(seconds*Tesla)]
+static double gyro = 1.760859644e+11; // Gyromagnetic ratio in [rad/(seconds*Tesla)]
 static double mu = 3.1415926535897932*4.0e-07; //Vacuum permeability
 static double kB = 1.38064852*(1.0e-23); //Boltzmann Constant
 static double e_charge = 1.6021765*1.0e-19; //Charge of the electron
