@@ -1,0 +1,118 @@
+10.8912118631127e-15
+290000
+8193571928741
+300
+100
+100
+0.02
+1.3e-11
+-35.5e-3 -6.3e-3 0.0e-3
+2.5e-9
+8.0e+5
+10000000
+0
+1
+290001
+3
+256 256
+0
+0.002 0.002 0.002
+0
+0.0 0.0 1.0
+0.0e+5
+0.0e-3 0.0e-3
+2.1e-9 2.2e-9
+1.0
+0.0e+12
+0
+0.0
+0.35
+500000
+1.0
+1
+
+DELTA_T FOR PY 43.56484939009212e-15
+DELTA_T FOR CoPt 4.37971952535595e-15
+
+These values of delta_t ensure computational timestep is 0.01 (but must be
+changed if the cell size changes)
+
+[1]Size of time discretization Delta-t in [s]
+
+[2]Total number of steps for dynamics, STEPS (total time is STEPS * Delta-t)
+
+[3]Seed for random number generators, must be a very large integer (long long specifically)
+
+[4]Temperature for stochastical Langevin dynamics (0 for deterministic), in [K]
+
+[5]Number of steps between each writing of .xyz trajectory files, integer
+
+[6]Number of steps between each writing of .dat magnetization and energy files, integer
+
+[7]Gilbert Damping constant alpha
+
+[8]Micromagnetic exchange tensor A (always diagonal for this program)
+
+[9]External Field X Y Z components (amplitude of pulse, in [T])
+
+[10]Lattice parameter of finite difference cell, simple cubic lattice only,[nm]
+
+[11]Saturation Magnetization (SI units)
+
+[12]Steps between writing of partial data (deprecated!)
+
+[13]Choose 0 if fresh simulation, choose 1 if restarting from partially saved
+data(deprecated!)
+
+[14]Choose integrator to solve dynamical equations
+	0 - RK4 + Adams-Bashfort-Moulton PC: 4th order precision, slow, only for T = 0
+K, may blow up
+	1 - Spherical Euler Predictor-Corrector (explicit spherical): 2nd order precision, fastest,
+symplectic
+	2 - Heun's Method (Euler Predictor + Trapezoidal Corrector): 2nd order precision, moderate speed, temperatures away from Curie
+point
+
+[15]Number Z of steps to turn off the Zeeman field B (restart simulation or use thermalized result to apply field!), number of relaxation steps is (STEPS - Z)
+
+[16]Choose 2 for XY model, choose 3 for a tridimensional system (P.S
+skyrmions are a 3D system!)
+
+[17]Block and Thread sizes for CUDA kernels: must be a power of 2, ideal is 256x256 for most cases
+
+[18]Choose 0 for constant in time external field, choose 1 for periodic in time field
+
+[19]Choose frequency of periodic field in [s^-1]
+
+[20]Choose 0 for deterministic LLG dynamics at T=0 and choose 1 for Langevin dynamics at T>0
+
+[21]Direction of uniaxial and uniform anisotropic field (don't worry about unitary vectors!)
+
+[22]Intensity of uniaxial and uniform magnetocrystalline anisotropy (SI
+units)
+
+[23] Intensity of DM superficial Field, D (choose both values equal if
+monolayer)
+
+[24] L1 and L2, values of distance from z_min where DM interaction decays to
+D1 and D2 respectively, i.e if L1 = 1, L2 = 2, we will have D1 in z =
+[0,1] and D2 in z = [1, 2] with D=0 above z=2
+
+[25] Ratio J'/J of magnetic impurity (only pointwise impurities supported in
+this version)
+
+[26] Current Density to be applied on the x-axis (SI units)
+
+[27] Choose whether or not current density is periodic in time (0 for not, 1 for yes)
+
+[28] Choose frequency of periodic current (only one direction for now) in s^-1 
+
+[29] Adiabatic Torque Transfer parameter Beta
+
+[30] Number of steps to turn off the current density
+
+[31] Mean percentage of polarization of angular moments in the current density - ( P )
+
+[32] Choose curvature of uniaxial anisotropy: 1 -> flat surface (refer to
+line 21 for direction), 2 -> cylindrical such that H_anisotropy ~ - (m . (0,
+cos t, sin t) ), 3 -> spherical such that H_anisotropy ~ - (m . (cos t sin
+phi, sin t sin phi, cos phi) )

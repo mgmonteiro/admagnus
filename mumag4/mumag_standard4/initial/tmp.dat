@@ -1,0 +1,27 @@
+Simulation Parameters
+=================================================================
+deltat=1.089121e-14, steps_dyn = 94000
+semente = 8193571928741, temp_dyn = 300.000000
+n_write_trj = 1000, n_write_data= 1000, firstneighbor = 2.500000e-09
+Saturation Magnetization Ms = 8.000000e+05
+Lattice parameter a = 2.500000e-09
+Zeeman Field: Bx = 0.000000e+00, By = 0.000000e+00, Bz = 0.000000e+00
+Gilbert Damping parameter alpha = 0.020000
+steps_restart=10000000, restart=0
+Integration method = 1, D/J = 1.538462e-02
+Computational time step = 1.000000e-02
+Exchange length = 5.685802e-09
+Langevin = 0
+Percentage of polarized angular moments in elecric current = 1.000000
+Current Density = 0.000000e+00
+Adiabatic Torque Transfer parameter beta = 3.500000e-01
+Magnetocrystall. Axis = 0.000000 0.000000 1.000000
+Surface Skyrmion interaction intensity for first and second layer sets respectively: 0.000000 0.000000
+Skyrmion limit range of interactions = 2.100000e-09 2.200000e-09
+====================================================================
+Zeeman Energy(fJ)      	-0.000000e+00
+Exchange Energy(fJ)      	-1.283750e+00
+Dipolar Energy (fJ)      	-2.402630e-18
+Anisotropy Energy (fJ)	-0.000000e+00
+DM Surface Energy (fJ)	-0.000000e+00
+Total Energy (fJ)      	-1.283750e+00
